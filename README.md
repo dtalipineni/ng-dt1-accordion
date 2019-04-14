@@ -2,6 +2,47 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
+# Installation
+npm install ng-dt1-accordion --save
+
+# Usage
+Import ``` NgDt1AccordionModule```
+
+<ng-dt1-accordion [accordionData] = "inputAccordionData" [accordionTitle]="inputAccordionTitle"></ng-dt1-accordion>
+
+```javascript
+Sample input data: 
+
+inputAccordionTitle = 'Sample Basic Accordion - Color Classification';
+
+  inputAccordionData = [{
+  name: 'Red',
+  sub: [{
+    name: 'Scarlet'
+  }, {
+    name: 'Carmine'
+  }]
+}, {
+  name: 'Green',
+  sub: [{
+    name: 'Chartreuse'
+  },{
+    name: 'Malachite'
+  }]
+}, {
+  name: 'Blue',
+  sub: [{
+    name: 'Cyan'
+  }, {
+    name: 'Periwinkle'
+  }, {
+    name: 'Ultramarine'
+  }]
+}];
+
+```
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
