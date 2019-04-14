@@ -1,0 +1,15 @@
+<div class="sample-accordion">
+  <label class="accordion-title">
+  {{accordionTitle}}
+  </label>
+  <ul>
+      <li *ngFor="let item of accordionData" (click)="selection.active = item.name">
+          {{ item.name }}
+          <ul *ngIf="selection.active == item.name">
+              <li *ngFor="let sub of item.sub">
+                  {{ sub.name }}
+              </li>
+          </ul>
+      </li>
+  </ul>
+  </div>
